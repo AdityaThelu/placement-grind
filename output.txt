@@ -1,2 +1,10 @@
-Enter a number: 
-Number is Prime
+Enter the value of a and b: 
+the prime numbers in range 2 and 19 are:
+2
+3
+5
+7
+11
+13
+17
+19

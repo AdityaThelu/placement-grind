@@ -1,18 +1,20 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int a,b;
-    cout << "enter a and b: " << endl;
-    cin >> a >> b;
-    cout << "the number " << a << " and " <<b << " are: " <<endl;
 
-    if(a>b){
-        cout << a << " is greater than " <<b<< endl;
-        for(int i=b; i<=a/2;i++){
-            if(a%i!=0){
-                cout << a << " is prime" << endl;
-                }
+int main(){
+    int a,b,i,j;
+    cout<<"Enter the value of a and b: "<< endl;
+    cin >> a >> b;
+    cout << "the prime numbers in range "<< a << " and " << b << " are:"<<endl;
+    for(i=a;i<=b;i++){
+        for(j=2;j<i;j++){
+            if(i%j==0){
+                break;
+            }
+        }
+        if(j==i){
+            
+            cout<<i<<endl;
         }
     }
-    return 0;
 }
